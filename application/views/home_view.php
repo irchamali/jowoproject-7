@@ -42,7 +42,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta name="twitter:image" content="<?php echo base_url() . 'theme/images/' . $site_image ?>" />
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-  
   <div id="overlayer"></div>
   <div class="loader">
     <div class="spinner-border text-primary" role="status">
@@ -50,9 +49,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
   </div>
 
-
   <div class="site-wrap">
-
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close mt-3">
@@ -62,7 +59,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="site-mobile-menu-body"></div>
     </div>
    
-    
     <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
       
       <div class="container-fluid">
@@ -98,7 +94,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-5 mr-auto" data-aos="fade-up">
-
             <div class="owl-carousel slide-one-item-alt-text">
               <div class="slide-text">
                 <h1>We Do Awesome Things</h1>
@@ -123,65 +118,53 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
 
           </div>
-          <div class="col-lg-6 ml-auto"  data-aos="fade-up" data-aos-delay="100">
-                        
+          <div class="col-lg-6 ml-auto"  data-aos="fade-up" data-aos-delay="100">       
             <div class="owl-carousel slide-one-item-alt">
               <img src="<?= base_url('theme/images/img_1.jpg'); ?>" alt="Image" class="img-fluid">
               <img src="<?= base_url('theme/images/img_2.jpg'); ?>" alt="Image" class="img-fluid">
               <img src="<?= base_url('theme/images/img_3.jpg'); ?>" alt="Image" class="img-fluid">
               <img src="<?= base_url('theme/images/img_4.jpg'); ?>" alt="Image" class="img-fluid">
             </div>
-
             <div class="owl-custom-direction">
               <a href="#" class="custom-prev"><span class="icon-keyboard_arrow_left"></span></a>
               <a href="#" class="custom-next"><span class="icon-keyboard_arrow_right"></span></a>
             </div>
-
           </div>
         </div>
       </div>
     </div>
 
-
-    <div class="site-section section-1">
-      
-    
+    <div class="site-section section-1" id="process-section">
       <div class="container">
         <div class="row">
           <div class="col-lg-5 mr-auto mb-5"  data-aos="fade-up">
-
             <div class="mb-5">
-              <h2 class="section-title">Love Our Works</h2>
+              <h2 class="section-title">WHAT IS LKTS?</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
               <p class="mb-5">Aperiam neque id, illum laudantium autem vero quae debitis tempora modi. Ipsa molestias enim in rem et incidunt beatae fugit, ab quam optio atque maiores facere est quidem, veritatis commodi.</p>
-
               <ul class="ul-check list-unstyled success">
                 <li>Aperiam neque id illum laudantium</li>
                 <li>Maiores facere est quidem</li>
                 <li>Laudantium autem vero</li>
               </ul>
-            </div>
-
-            
+            </div>          
           </div>
-
           <div class="col-lg-6"  data-aos="fade-up" data-aos-delay="100">
             <div class="image-absolute-box">
               <div class="box">
                 <div class="icon-wrap"><span class="flaticon-vector"></span></div>
                 <h3>Pixel Perfect Templates</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati commodi aspernatur eum eius inventore facilis.</p>
-                <p class="mb-0">Visit <a href="#" class="text-danger">Colorlib</a></p>
+                <p class="mb-0">Visit <a href="#" class="text-danger">LKTS</a></p>
               </div>
               <img src="<?= base_url('theme/images/img_1.jpg'); ?>" alt="Image" class="img-fluid">
             </div>
           </div>
         </div>
       </div>
-
     </div>
 
-    <div class="container section-counter">
+    <!-- <div class="container section-counter">
       <div class="row">
         <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="">
           <div class="counter d-flex align-items-start mb-5">
@@ -224,167 +207,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="site-section section-2" id="work-section" data-aos="fade">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mb-5">
-            <h2 class="section-title">Our Projects</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          </div>
-        </div>
-      </div>
-        
-
-      <div class="owl-carousel nonloop-block-13">
-
-          <a class="work-thumb" href="<?= base_url('theme/images/img_1.jpg'); ?>" data-fancybox="gallery">
-            <div class="work-text">
-              <h3>Project Name Here</h3>
-              <span class="category">Website</span>
-            </div>
-            <img src="<?= base_url('theme/images/img_1.jpg'); ?>" alt="Image" class="img-fluid">
-          </a> 
-          
-          <a class="work-thumb" href="<?= base_url('theme/images/img_2.jpg'); ?>" data-fancybox="gallery">
-            <div class="work-text">
-              <h3>Project Name Here</h3>
-              <span class="category">Illustration</span>
-            </div>
-            <img src="<?= base_url('theme/images/img_2.jpg'); ?>" alt="Image" class="img-fluid">
-          </a>
-
-          <a class="work-thumb" href="<?= base_url('theme/images/img_3.jpg'); ?>" data-fancybox="gallery">
-            <div class="work-text">
-              <h3>Project Name Here</h3>
-              <span class="category">Branding</span>
-            </div>
-            <img src="<?= base_url('theme/images/img_3.jpg'); ?>" alt="Image" class="img-fluid">
-          </a>
-
-          <a class="work-thumb" href="<?= base_url('theme/images/img_4.jpg'); ?>" data-fancybox="gallery">
-            <div class="work-text">
-              <h3>Project Name Here</h3>
-              <span class="category">Web Development</span>
-            </div>
-            <img src="<?= base_url('theme/images/img_4.jpg'); ?>" alt="Image" class="img-fluid">
-          </a>
-
-          <a class="work-thumb" href="<?= base_url('theme/images/img_2.jpg'); ?>" data-fancybox="gallery">
-            <div class="work-text">
-              <h3>Project Name Here</h3>
-              <span class="category">Design</span>
-            </div>
-            <img src="<?= base_url('theme/images/img_2.jpg'); ?>" alt="Image" class="img-fluid">
-          </a>
-      </div>
-    
-    </div>
-
-
-    <div class="site-section section-2 bg-light" id="process-section" data-aos="fade">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mb-5">
-            <h2 class="section-title">Our Approach</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="process bg-white rounded">
-              <div>
-                <span class="flaticon-glasses display-4 text-primary mb-4 d-inline-block"></span>
-                <h3>Data Gathering</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-              </div>
-
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="process bg-white rounded">
-              <div>
-                <span class="flaticon-vector display-4 text-primary mb-4 d-inline-block"></span>
-                <h3>Implementation</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-              </div>
-
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="process bg-white rounded">
-              <div>
-                <span class="flaticon-monitor display-4 text-primary mb-4 d-inline-block"></span>
-                <h3>Launch</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="site-section testimonial-wrap custom-owl-carousel" id="testimonials-section">
-      <div class="container">
-        <div class="row text-center justify-content-center mb-5"  data-aos="fade-up">
-          <div class="col-lg-6 mb-5 text-center">
-            <h2 class="section-title w-100 mx-auto">Testimonials</h2>
-            <p>Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
-          </div>
-        </div>
-        <div class="row align-items-center"  data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-5 mr-auto">
-
-            <div class="owl-carousel slide-one-item-alt-text">
-              <div class="slide-text">
-                <blockquote>
-                  <p><span>&ldquo;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corrupti, obcaecati repudiandae, animi ad quos. Eius expedita ipsa qui autem.<span>&rdquo;</span></p>
-                  <p class="author">&mdash;  Jean Doe</p>
-                </blockquote>
-              </div>
-              <div class="slide-text">
-                <blockquote>
-                  <p><span>&ldquo;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corrupti, obcaecati repudiandae, animi ad quos. Eius expedita ipsa qui autem.<span>&rdquo;</span></p>
-                  <p class="author">&mdash;  Gregg Pollach</p>
-                </blockquote>
-              </div>
-              <div class="slide-text">
-               <blockquote>
-                  <p><span>&ldquo;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corrupti, obcaecati repudiandae, animi ad quos. Eius expedita ipsa qui autem.<span>&rdquo;</span></p>
-                  <p class="author">&mdash;  Rober Kenneth</p>
-                </blockquote>
-              </div>
-              <div class="slide-text">
-                <blockquote>
-                  <p><span>&ldquo;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos corrupti, obcaecati repudiandae, animi ad quos. Eius expedita ipsa qui autem.<span>&rdquo;</span></p>
-                  <p class="author">&mdash;  Joshua Smith</p>
-                </blockquote>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-lg-6 ml-auto"  data-aos="fade-up" data-aos-delay="200">
-                        
-            <div class="owl-carousel slide-one-item-alt">
-              <img src="<?= base_url('theme/images/person_1.jpg'); ?>" alt="Image" class="img-fluid">
-              <img src="<?= base_url('theme/images/person_2.jpg'); ?>" alt="Image" class="img-fluid">
-              <img src="<?= base_url('theme/images/person_3.jpg'); ?>" alt="Image" class="img-fluid">
-              <img src="<?= base_url('theme/images/person_4.jpg'); ?>" alt="Image" class="img-fluid">
-            </div>
-
-            <div class="owl-custom-direction">
-              <a href="#" class="custom-prev"><span class="icon-keyboard_arrow_left"></span></a>
-              <a href="#" class="custom-next"><span class="icon-keyboard_arrow_right"></span></a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
+    </div> -->
 
     <div class="site-section bg-light" id="services-section" data-aos="fade">
       <div class="container">
@@ -395,7 +218,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           </div>
         </div>
       </div>
-
         
       <div class="owl-carousel nonloop-block-14">
         
@@ -406,7 +228,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <p>Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
           </div>
         </div>
-
 
         <div class="service">
           <div>
@@ -450,6 +271,164 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
       </div>
     </div>
+
+    <!-- <div class="site-section section-2 bg-light" id="process-section" data-aos="fade">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-5">
+            <h2 class="section-title">Our Approach</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="process bg-white rounded">
+              <div>
+                <span class="flaticon-glasses display-4 text-primary mb-4 d-inline-block"></span>
+                <h3>Data Gathering</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="process bg-white rounded">
+              <div>
+                <span class="flaticon-vector display-4 text-primary mb-4 d-inline-block"></span>
+                <h3>Implementation</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div class="process bg-white rounded">
+              <div>
+                <span class="flaticon-monitor display-4 text-primary mb-4 d-inline-block"></span>
+                <h3>Launch</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+    <div class="site-section testimonial-wrap custom-owl-carousel" id="testimonials-section">
+      <div class="container">
+        <div class="row text-center justify-content-center mb-5"  data-aos="fade-up">
+          <div class="col-lg-6 mb-5 text-center">
+            <h2 class="section-title w-100 mx-auto">Testimonials/ Team</h2>
+            <p>Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p>
+          </div>
+        </div>
+        <div class="row align-items-center"  data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-5 mr-auto">
+
+            <div class="owl-carousel slide-one-item-alt-text">
+              <div class="slide-text">
+                <blockquote>
+                  <p><span>&ldquo;</span>Jabatan ini orang adalah?<span>&rdquo;</span></p>
+                  <p class="author">&mdash;  Jean Doe</p>
+                </blockquote>
+              </div>
+              <div class="slide-text">
+                <blockquote>
+                  <p><span>&ldquo;</span>Jabatan ini orang adalah?<span>&rdquo;</span></p>
+                  <p class="author">&mdash;  Gregg Pollach</p>
+                </blockquote>
+              </div>
+              <div class="slide-text">
+               <blockquote>
+                  <p><span>&ldquo;</span>Jabatan ini orang adalah?<span>&rdquo;</span></p>
+                  <p class="author">&mdash;  Rober Kenneth</p>
+                </blockquote>
+              </div>
+              <div class="slide-text">
+                <blockquote>
+                  <p><span>&ldquo;</span>Jabatan ini orang adalah?<span>&rdquo;</span></p>
+                  <p class="author">&mdash;  Joshua Smith</p>
+                </blockquote>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-4 ml-auto"  data-aos="fade-up" data-aos-delay="200">
+                        
+            <div class="owl-carousel slide-one-item-alt">
+              <img src="<?= base_url('theme/images/person_1.jpg'); ?>" alt="Image" class="img-fluid">
+              <img src="<?= base_url('theme/images/person_2.jpg'); ?>" alt="Image" class="img-fluid">
+              <img src="<?= base_url('theme/images/person_3.jpg'); ?>" alt="Image" class="img-fluid">
+              <img src="<?= base_url('theme/images/person_4.jpg'); ?>" alt="Image" class="img-fluid">
+            </div>
+
+            <div class="owl-custom-direction">
+              <a href="#" class="custom-prev"><span class="icon-keyboard_arrow_left"></span></a>
+              <a href="#" class="custom-next"><span class="icon-keyboard_arrow_right"></span></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- sini buat gallery -->
+  <div class="site-section section-2 bg-light" id="work-section" data-aos="fade">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-2">
+            <h2 class="section-title">Our Projects/ Gallery</h2>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem possimus distinctio ex. Natus totam voluptatibus animi aspernatur ducimus quas obcaecati mollitia quibusdam temporibus culpa dolore molestias blanditiis consequuntur sunt nisi.</p> -->
+          </div>
+        </div>
+      </div>
+        
+      <div class="owl-carousel nonloop-block-13">
+
+          <a class="work-thumb" href="<?= base_url('theme/images/img_1.jpg'); ?>" data-fancybox="gallery">
+            <div class="work-text">
+              <h3>Project Name Here</h3>
+              <span class="category">Website</span>
+            </div>
+            <img src="<?= base_url('theme/images/img_1.jpg'); ?>" alt="Image" class="img-fluid">
+          </a> 
+          
+          <a class="work-thumb" href="<?= base_url('theme/images/img_2.jpg'); ?>" data-fancybox="gallery">
+            <div class="work-text">
+              <h3>Project Name Here</h3>
+              <span class="category">Illustration</span>
+            </div>
+            <img src="<?= base_url('theme/images/img_2.jpg'); ?>" alt="Image" class="img-fluid">
+          </a>
+
+          <a class="work-thumb" href="<?= base_url('theme/images/img_3.jpg'); ?>" data-fancybox="gallery">
+            <div class="work-text">
+              <h3>Project Name Here</h3>
+              <span class="category">Branding</span>
+            </div>
+            <img src="<?= base_url('theme/images/img_3.jpg'); ?>" alt="Image" class="img-fluid">
+          </a>
+
+          <a class="work-thumb" href="<?= base_url('theme/images/img_4.jpg'); ?>" data-fancybox="gallery">
+            <div class="work-text">
+              <h3>Project Name Here</h3>
+              <span class="category">Web Development</span>
+            </div>
+            <img src="<?= base_url('theme/images/img_4.jpg'); ?>" alt="Image" class="img-fluid">
+          </a>
+
+          <a class="work-thumb" href="<?= base_url('theme/images/img_2.jpg'); ?>" data-fancybox="gallery">
+            <div class="work-text">
+              <h3>Project Name Here</h3>
+              <span class="category">Design</span>
+            </div>
+            <img src="<?= base_url('theme/images/img_2.jpg'); ?>" alt="Image" class="img-fluid">
+          </a>
+      </div>
+    
+    </div>    
 
 
     <div class="pricing-wrap bg-primary pricing-counter" id="pricing-section" data-aos="fade">
@@ -519,7 +498,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <div class="site-section"  data-aos="fade">
       <div class="container">
-        <a href="https://vimeo.com/325355987" class="video-img-bg" data-fancybox data-ratio="2">
+        <a href="https://www.youtube.com/watch?v=MZLrW8xVP2Q" class="video-img-bg" data-fancybox data-ratio="2">
           <span class="play-button">
             <span class="icon-play"></span>
           </span>
@@ -620,7 +599,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="border-top pt-5">
               <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            &copy; LKTS <script>document.write(new Date().getFullYear());</script> | Dev <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://jowokode.com" target="_blank" >Jowokode</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
             
