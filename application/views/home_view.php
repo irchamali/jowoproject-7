@@ -1,9 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Home</title>
+	<title><?php echo $site_title; ?></title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Muli:300,400,700,900" rel="stylesheet">
@@ -18,6 +19,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <link rel="stylesheet" href="<?= base_url('theme/fonts/flaticon/font/flaticon.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('theme/css/aos.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('theme/css/style.css'); ?>">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="<?php echo base_url('theme/images/' . $icon); ?>">
+    <!-- SEO Tag -->
+    <meta name="description" content="<?php echo $site_desc; ?>" />
+    <link rel="canonical" href="<?php echo site_url(); ?>" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="<?php echo $site_title; ?>" />
+    <meta property="og:description" content="<?php echo $site_desc; ?>" />
+    <meta property="og:url" content="<?php echo site_url(); ?>" />
+    <meta property="og:site_name" content="<?php echo $site_name; ?>" />
+    <meta property="og:image" content="<?php echo base_url() . 'theme/images/' . $site_image ?>" />
+    <meta property="og:image:secure_url" content="<?php echo base_url() . 'theme/images/' . $site_image ?>" />
+    <meta property="og:image:width" content="560" />
+    <meta property="og:image:height" content="315" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="<?php echo $site_desc; ?>" />
+    <meta name="twitter:title" content="<?php echo $site_title; ?>" />
+    <meta name="twitter:site" content="<?php echo $site_twitter; ?>" />
+    <meta name="twitter:image" content="<?php echo base_url() . 'theme/images/' . $site_image ?>" />
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   
@@ -45,7 +67,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       
       <div class="container-fluid">
         <div class="d-flex align-items-center">
-          <div class="site-logo"><a href="index.html" class="text-uppercase">Expert</a></div>
+          <div class="site-logo"><a href="index.html" class="text-uppercase">LKTS</a></div>
           <div>
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-xl-block">
@@ -214,8 +236,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
       </div>
         
-
-
 
       <div class="owl-carousel nonloop-block-13">
 
