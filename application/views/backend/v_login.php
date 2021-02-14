@@ -42,7 +42,7 @@
                     <div class="col-md-3 center">
                         <div class="login-box">
                             <br>
-                            <a href="https://fanjoyogroup.com" class="logo-name text-md text-center"><img src="<?= base_url('theme/images/logo.png'); ?>" width="150px"></a>
+                            <a href="https://lkts.org" class="logo-name text-md text-center"><img src="<?= base_url('theme/images/logoNavLkts.png'); ?>" width="150px"></a>
                             <p class="text-center m-t-md">Please login into your account.</p>
                             <?php echo $this->session->flashdata('msg'); ?>
                             <form class="m-t-md" action="<?php echo site_url('backend/login/auth'); ?>" method="post">
@@ -55,7 +55,7 @@
                                 <button type="submit" class="btn btn-success btn-block">Login</button>
 
                             </form>
-                            <p class="text-center m-t-xs text-sm"><?php echo date('Y'); ?> &copy; Fanjoyo Group</p>
+                            <p class="text-center m-t-xs text-sm"><?php echo date('Y'); ?> &copy; LKTS Web</p>
                         </div>
                     </div>
                 </div><!-- Row -->
