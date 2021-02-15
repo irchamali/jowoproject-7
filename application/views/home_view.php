@@ -78,7 +78,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-xl-block">
                 <li><a href="#articles-section" class="nav-link">Articles</a></li>
-                <li class="cta"><a href="#contact-section" class="nav-link"><span class="border bg-danger rounded text-white border-danger">Contact</span></a></li>
+                <li class="cta"><a href="#contact-section" class="nav-link"><span class="border bg-primary rounded text-white border-primary">Contact</span></a></li>
               </ul>
             </nav>
             <a href="#" class="d-inline-block d-xl-none site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a>
@@ -336,13 +336,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     
     </div>    
 
-
+    <!-- ARTICLES -->
     <div class="pricing-wrap bg-primary pricing-counter" id="articles-section" data-aos="fade">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-7 text-center">
-            <h2 class="section-title mb-3 text-center text-white mx-auto">ARTICLES</h2>
-            <p class="mb-5 section-desc">Beberapa artikel tentang kegiatan dan program lembaga kami.</p>
+            <h2 class="section-title mb-3 text-center text-white mx-auto"><?= $reason_title; ?></h2>
+            <p class="mb-5 section-desc"><?= $reason_subtitle; ?></p>
           </div>
         </div>
       </div>
@@ -352,41 +352,41 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="row no-gutters">
         <div class="col-lg-4">
           <div class="pricing">
-            <h3>LKTS Sambangi Sejumlah OPD Pemkab Boyolali</h3>
+            <h3><?= $reason_why1; ?></h3>
             <!-- <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
             <div class="price">
               <!-- <span>Starting at</span>
               <strong>$<em class="number" data-number="7">0</em></strong>
               <span>Per Month</span> -->
             </div>
-            <p class="description-2 mb-5">Kasus AKI/AKB masih tinggi di Kabupaten Boyolali dengan jumlah 12 kasus pada tahun 2019, data ini diperoleh saat wawancara dengan dr Ariyanto Kasie Kesga Dinas Kesehatan Kabupaten Boyolali..</p>
+            <p class="description-2 mb-5"><?= $reason_how1; ?></p>
             <p><a href="https://www.atmago.com/berita-warga/kompilasi-dan-pelajari-data-aki-akb-lkts-sambangi-sejumlah-opd-pemkab-boyolali_af4a6e39-093d-4b51-a4fe-0a2252aecda9" target="_blank" class="btn btn-outline-primary py-3 px-5">Read more</a></p>
             
           </div>
         </div>
         <div class="col-lg-4">
           <div class="pricing pricing-popular">
-            <h3>FORMMAD WARNA BARU KEGIATAN OMS DI BOYOLALI</h3>
+            <h3><?= $reason_why2; ?></h3>
             <!-- <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
             <div class="price">
               <!-- <span>Starting at</span>
               <strong>$<em class="number" data-number="75">0</em></strong>
               <span>Per Month</span> -->
             </div>
-            <p class="description-2 mb-5">Pendirian dilakukan sejumlah OMS dalam lokakarya inisiasi simpul belajar yang difasilitasi LKTS atas dukungan program MADANI Pembentukan simpul Belajar di Boyolali Jawa Tengah diperlukan..</p>
+            <p class="description-2 mb-5"><?= $reason_how2; ?></p>
             <p><a href="https://www.atmago.com/berita-warga/formmad-warna-baru-kegiatan-oms-di-boyolali_7971a85f-03a3-430d-8a04-7613f7c7e2b5" target="_blank" class="btn  btn-outline-danger py-3 px-5">Read more</a></p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="pricing">
-            <h3>KICK OFF LEARNING FORUM KABUPATEN BOYOLALI</h3>
+            <h3><?= $reason_why3; ?></h3>
             <!-- <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
             <div class="price">
               <!-- <span>Starting at aaaaa aaa aaaa aaaa</span>
               <strong>$<em class="number" data-number="390">0</em></strong>
               <span>Per Month</span> -->
             </div>
-            <p class="description-2 mb-5">Kasus kematian ibu dan bayi ini menjadi salah satu indikator Sustainable Development Goals (SDGs) atau Tujuan Pembangunan Berkelanjutan (TPB) negara-negara di dunia. Sehingga kasus kematian..</p>
+            <p class="description-2 mb-5"><?= $reason_how3; ?></p>
             <p><a href="https://www.atmago.com/berita-warga/kick-off-learning-forum-kabupaten-boyolali_922af0ee-db36-4819-b0ab-32b2f8582e6e" target="_blank" class="btn btn-outline-primary py-3 px-5">Read more</a></p>
           </div>
         </div>
@@ -394,7 +394,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
     <div class="site-section"  data-aos="fade">
       <div class="container">
-        <a href="https://www.youtube.com/watch?v=MZLrW8xVP2Q" class="video-img-bg" data-fancybox data-ratio="2">
+        <a href="https://www.youtube.com/watch?v=dVYS-sMbO04" class="video-img-bg" data-fancybox data-ratio="2">
           <span class="play-button">
             <span class="icon-play"></span>
           </span>
@@ -476,7 +476,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <p>Visit our office via maps</p>
             <form action="#">
               <div class="d-flex mb-5">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.3709870759462!2d110.59452451477655!3d-7.534454894565935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a6eb437e20ee5%3A0x699428c6ae8ceda3!2sInstitute%20for%20Social%20Transformation%20Studies!5e0!3m2!1sid!2sid!4v1613359588762!5m2!1sid!2sid" width="400" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.3709870759462!2d110.59452451477655!3d-7.534454894565935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a6eb437e20ee5%3A0x699428c6ae8ceda3!2sInstitute%20for%20Social%20Transformation%20Studies!5e0!3m2!1sid!2sid!4v1613359588762!5m2!1sid!2sid" width="380" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
               </div>
             </form>
           </div>
@@ -498,7 +498,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="border-top pt-5">
               <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            &copy; LKTS <script>document.write(new Date().getFullYear());</script> <br> Dev with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://jowokode.com" target="_blank" >Jowokode</a>
+            &copy; LKTS <script>document.write(new Date().getFullYear());</script> <br> Build with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://jowokode.com" target="_blank" >Jowokode</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
             
