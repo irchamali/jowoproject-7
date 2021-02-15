@@ -300,8 +300,8 @@
                                         <label for="input1" class="col-sm-2 control-label">Image 1</label>
                                         <div class="col-sm-10">
                                             <input type="file" name="img_1" class="form-control" id="input1">
-                                            <p class="help-block">Image Pertama harus beresolusi 1300 x 866 Pixels (Grayscale).</p>
-                                            <img src="<?php echo base_url() . 'theme/images/' . $image1; ?>" width="360" class="thumbnail">
+                                            <p class="help-block">Image berbentuk kotak dengan resolusi 500 x 500 Pixels.</p>
+                                            <img src="<?php echo base_url() . 'theme/images/' . $image1; ?>" width="300" class="thumbnail">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -327,8 +327,8 @@
                                         <label for="input1" class="col-sm-2 control-label">Image 2</label>
                                         <div class="col-sm-10">
                                             <input type="file" name="img_2" class="form-control" id="input1">
-                                            <p class="help-block">Image Pertama harus beresolusi 1300 x 866 Pixels (Grayscale).</p>
-                                            <img src="<?php echo base_url() . 'theme/images/' . $image2; ?>" width="360" class="thumbnail">
+                                            <p class="help-block">Image berbentuk kotak dengan resolusi 500 x 500 Pixels.</p>
+                                            <img src="<?php echo base_url() . 'theme/images/' . $image2; ?>" width="300" class="thumbnail">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -354,8 +354,8 @@
                                         <label for="input1" class="col-sm-2 control-label">Image 3</label>
                                         <div class="col-sm-10">
                                             <input type="file" name="img_3" class="form-control" id="input1">
-                                            <p class="help-block">Image Pertama harus beresolusi 1300 x 866 Pixels (Grayscale).</p>
-                                            <img src="<?php echo base_url() . 'theme/images/' . $image3; ?>" width="360" class="thumbnail">
+                                            <p class="help-block">Image berbentuk kotak dengan resolusi 500 x 500 Pixels.</p>
+                                            <img src="<?php echo base_url() . 'theme/images/' . $image3; ?>" width="300" class="thumbnail">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -381,8 +381,8 @@
                                         <label for="input1" class="col-sm-2 control-label">Image 4</label>
                                         <div class="col-sm-10">
                                             <input type="file" name="img_4" class="form-control" id="input1">
-                                            <p class="help-block">Image Pertama harus beresolusi 1300 x 866 Pixels (Grayscale).</p>
-                                            <img src="<?php echo base_url() . 'theme/images/' . $image4; ?>" width="360" class="thumbnail">
+                                            <p class="help-block">Image berbentuk kotak dengan resolusi 500 x 500 Pixels.</p>
+                                            <img src="<?php echo base_url() . 'theme/images/' . $image4; ?>" width="300" class="thumbnail">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -402,8 +402,8 @@
                                         <label for="input1" class="col-sm-2 control-label">Image 5</label>
                                         <div class="col-sm-10">
                                             <input type="file" name="img_5" class="form-control" id="input1">
-                                            <p class="help-block">Image Pertama harus beresolusi 1300 x 866 Pixels (Grayscale).</p>
-                                            <img src="<?php echo base_url() . 'theme/images/' . $image5; ?>" width="360" class="thumbnail">
+                                            <p class="help-block">Image berbentuk kotak dengan resolusi 500 x 500 Pixels.</p>
+                                            <img src="<?php echo base_url() . 'theme/images/' . $image5; ?>" width="300" class="thumbnail">
                                         </div>
                                     </div>
                                     <div class="form-group">

@@ -289,7 +289,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Alasan 1</label>
+                                        <label for="input1" class="col-sm-2 control-label">Judul 1</label>
                                         <div class="col-sm-10">
                                             <input type="text" name="reason_why1" class="form-control" id="input1" value="<?= $reason_why1; ?>" placeholder="Site Title">
                                         </div>
@@ -301,7 +301,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Alasan 2</label>
+                                        <label for="input1" class="col-sm-2 control-label">Judul 2</label>
                                         <div class="col-sm-10">
                                             <input type="text" name="reason_why2" class="form-control" id="input1" value="<?= $reason_why2; ?>" placeholder="Site Title">
                                         </div>
@@ -313,7 +313,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Alasan 3</label>
+                                        <label for="input1" class="col-sm-2 control-label">Judul 3</label>
                                         <div class="col-sm-10">
                                             <input type="text" name="reason_why3" class="form-control" id="input1" value="<?= $reason_why3; ?>" placeholder="Site Title">
                                         </div>
