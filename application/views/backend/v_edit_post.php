@@ -53,7 +53,7 @@ $b = $data->row_array();
                     </a>
                 </div>
                 <div class="logo-box">
-                    <a href="<?php echo site_url('backend/dashboard'); ?>" class="logo-text"><span>FANJOYO</span></a>
+                    <a href="<?php echo site_url('backend/dashboard'); ?>" class="logo-text"><span>LKTS</span></a>
                 </div><!-- Logo Box -->
                 <div class="topmenu-outer">
                     <div class="top-menu">
@@ -220,9 +220,9 @@ $b = $data->row_array();
                                 <li><a href="<?php echo site_url('backend/home_setting'); ?>">Home</a></li>
                                 <li><a href="<?php echo site_url('backend/service_setting'); ?>">Service</a></li>
                                 <li><a href="<?php echo site_url('backend/about_setting'); ?>">About</a></li>
-                                <li><a href="<?php echo site_url('backend/portfolio_setting'); ?>">Portfolio</a></li>
-                                <li><a href="<?php echo site_url('backend/reason_setting'); ?>">Reason</a></li>
-                                <li><a href="<?php echo site_url('backend/gallery_setting'); ?>">Gallery</a></li>
+                                <li><a href="<?php echo site_url('backend/portfolio_setting'); ?>">Gallery</a></li>
+                                <li><a href="<?php echo site_url('backend/reason_setting'); ?>">Article</a></li>
+                                <!-- <li><a href="<?php echo site_url('backend/gallery_setting'); ?>">Gallery</a></li> -->
                                 <!-- <li><a href="<?php echo site_url('backend/navbar'); ?>">Navbar</a></li> -->
                             </ul>
                         </li>
