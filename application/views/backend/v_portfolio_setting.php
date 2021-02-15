@@ -3,7 +3,7 @@
 
 <head>
     <!-- Title -->
-    <title>Portfolio Settings</title>
+    <title>Gallery Settings</title>
 
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta charset="UTF-8">
@@ -260,7 +260,7 @@
         </div><!-- Page Sidebar -->
         <div class="page-inner">
             <div class="page-title">
-                <h3>Portfolio Information</h3>
+                <h3>Gallery Information</h3>
                 <div class="page-breadcrumb">
                     <ol class="breadcrumb">
                         <li><a href="<?php echo site_url('backend/dashboard'); ?>">Dashboard</a></li>
@@ -310,12 +310,12 @@
                                             <input type="text" name="desc1" class="form-control" id="input1" value="<?php echo $desc1; ?>" placeholder="Site Name">
                                         </div>
                                     </div>
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <label for="input1" class="col-sm-2 control-label">Link 1</label>
                                         <div class="col-sm-10">
                                             <input type="text" name="link1" class="form-control" id="input1" value="<?php echo $link1; ?>" placeholder="Site Name">
                                         </div>
-                                    </div>
+                                    </div> -->
 
                                     <div class="form-group">
                                         <label for="input1" class="col-sm-2 control-label">Project 2</label>
@@ -337,12 +337,12 @@
                                             <input type="text" name="desc2" class="form-control" id="input1" value="<?php echo $desc2; ?>" placeholder="Site Name">
                                         </div>
                                     </div>
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <label for="input1" class="col-sm-2 control-label">Link 2</label>
                                         <div class="col-sm-10">
                                             <input type="text" name="link2" class="form-control" id="input1" value="<?php echo $link2; ?>" placeholder="Site Name">
                                         </div>
-                                    </div>
+                                    </div> -->
 
                                     <div class="form-group">
                                         <label for="input1" class="col-sm-2 control-label">Project 3</label>
@@ -364,10 +364,52 @@
                                             <input type="text" name="desc3" class="form-control" id="input1" value="<?php echo $desc3; ?>" placeholder="Site Name">
                                         </div>
                                     </div>
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <label for="input1" class="col-sm-2 control-label">Link 3</label>
                                         <div class="col-sm-10">
                                             <input type="text" name="link3" class="form-control" id="input1" value="<?php echo $link3; ?>" placeholder="Site Name">
+                                        </div>
+                                    </div> -->
+
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Project 4</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="project4" class="form-control" id="input1" value="<?php echo $project4; ?>" placeholder="Site Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Image 4</label>
+                                        <div class="col-sm-10">
+                                            <input type="file" name="img_4" class="form-control" id="input1">
+                                            <p class="help-block">Image Pertama harus beresolusi 1300 x 866 Pixels (Grayscale).</p>
+                                            <img src="<?php echo base_url() . 'theme/images/' . $image4; ?>" width="360" class="thumbnail">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Deskripsi 4</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="desc4" class="form-control" id="input1" value="<?php echo $desc4; ?>" placeholder="Site Name">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Project 5</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="project5" class="form-control" id="input1" value="<?php echo $project5; ?>" placeholder="Site Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Image 5</label>
+                                        <div class="col-sm-10">
+                                            <input type="file" name="img_5" class="form-control" id="input1">
+                                            <p class="help-block">Image Pertama harus beresolusi 1300 x 866 Pixels (Grayscale).</p>
+                                            <img src="<?php echo base_url() . 'theme/images/' . $image5; ?>" width="360" class="thumbnail">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Deskripsi 5</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="desc5" class="form-control" id="input1" value="<?php echo $desc5; ?>" placeholder="Site Name">
                                         </div>
                                     </div>
 

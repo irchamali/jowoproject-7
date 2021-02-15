@@ -286,19 +286,38 @@
                                     <div class="form-group">
                                         <label for="input1" class="col-sm-2 control-label">Caption 1</label>
                                         <div class="col-sm-10">
-                                            <input type="text" name="caption1" class="form-control" id="input1" value="<?php echo $caption_1; ?>" placeholder="Site Name">
+                                            <input type="text" name="caption1" class="form-control" id="input1" value="<?php echo $caption_1; ?>" placeholder="Caption Title">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="input1" class="col-sm-2 control-label">Caption 2</label>
                                         <div class="col-sm-10">
-                                            <input type="text" name="caption2" class="form-control" id="input1" value="<?php echo $caption_2; ?>" placeholder="Site Title">
+                                            <input type="text" name="caption2" class="form-control" id="input1" value="<?php echo $caption_2; ?>" placeholder="Caption Title">
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="input1" class="col-sm-2 control-label">Caption 3</label>
                                         <div class="col-sm-10">
-                                            <input type="text" name="caption3" class="form-control" id="input1" value="<?php echo $caption_3; ?>" placeholder="Site Title">
+                                            <input type="text" name="caption3" class="form-control" id="input1" value="<?php echo $caption_3; ?>" placeholder="Caption Title">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Desc 1</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="descr1" class="form-control" id="input1" value="<?php echo $descr_1; ?>" placeholder="Desc Title">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Desc 2</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="descr2" class="form-control" id="input1" value="<?php echo $descr_2; ?>" placeholder="Desc Title">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Desc 3</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="descr3" class="form-control" id="input1" value="<?php echo $descr_3; ?>" placeholder="Desc Title">
                                         </div>
                                     </div>
 

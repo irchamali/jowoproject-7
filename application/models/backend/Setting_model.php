@@ -9,12 +9,15 @@ class Setting_model extends CI_Model
 		return $query;
 	}
 
-	function update_information($home_id, $caption1, $caption2, $caption3, $title1, $slide_1, $slide_2, $slide_3)
+	function update_information($home_id, $title1, $caption1, $caption2, $caption3, $descr1, $descr2, $descr3, $slide_1, $slide_2, $slide_3)
 	{
 		$this->db->set('home_title_1', $title1);
 		$this->db->set('home_caption_1', $caption1);
 		$this->db->set('home_caption_2', $caption2);
 		$this->db->set('home_caption_3', $caption3);
+		$this->db->set('home_descr_1', $descr1);
+		$this->db->set('home_descr_2', $descr2);
+		$this->db->set('home_descr_3', $descr3); 
 		$this->db->set('home_slide_1', $slide_1);
 		$this->db->set('home_slide_2', $slide_2);
 		$this->db->set('home_slide_3', $slide_3);
@@ -22,45 +25,57 @@ class Setting_model extends CI_Model
 		$this->db->update('tbl_home');
 	}
 
-	function update_information_1($home_id, $caption1, $caption2, $caption3, $title1, $slide_1)
+	function update_information_1($home_id, $title1, $caption1, $caption2, $caption3, $descr1, $descr2, $descr3, $slide_1)
 	{
 		$this->db->set('home_title_1', $title1);
 		$this->db->set('home_caption_1', $caption1);
 		$this->db->set('home_caption_2', $caption2);
 		$this->db->set('home_caption_3', $caption3);
+		$this->db->set('home_descr_1', $descr1);
+		$this->db->set('home_descr_2', $descr2);
+		$this->db->set('home_descr_3', $descr3);
 		$this->db->set('home_slide_1', $slide_1);
 		$this->db->where('home_id', $home_id);
 		$this->db->update('tbl_home');
 	}
 
-	function update_information_2($home_id, $caption1, $caption2, $caption3, $title1, $slide_2)
+	function update_information_2($home_id, $title1, $caption1, $caption2, $caption3, $descr1, $descr2, $descr3, $slide_2)
 	{
 		$this->db->set('home_title_1', $title1);
 		$this->db->set('home_caption_1', $caption1);
 		$this->db->set('home_caption_2', $caption2);
 		$this->db->set('home_caption_3', $caption3);
+		$this->db->set('home_descr_1', $descr1);
+		$this->db->set('home_descr_2', $descr2);
+		$this->db->set('home_descr_3', $descr3);
 		$this->db->set('home_slide_2', $slide_2);
 		$this->db->where('home_id', $home_id);
 		$this->db->update('tbl_home');
 	}
 
-	function update_information_3($home_id, $caption1, $caption2, $caption3, $title1, $slide_3)
+	function update_information_3($home_id, $title1, $caption1, $caption2, $caption3, $descr1, $descr2, $descr3, $slide_3)
 	{
 		$this->db->set('home_title_1', $title1);
 		$this->db->set('home_caption_1', $caption1);
 		$this->db->set('home_caption_2', $caption2);
 		$this->db->set('home_caption_3', $caption3);
+		$this->db->set('home_descr_1', $descr1);
+		$this->db->set('home_descr_2', $descr2);
+		$this->db->set('home_descr_3', $descr3);
 		$this->db->set('home_slide_3', $slide_3);
 		$this->db->where('home_id', $home_id);
 		$this->db->update('tbl_home');
 	}
 
-	function update_information_noimg($home_id, $caption1, $caption2, $caption3, $title1)
+	function update_information_noimg($home_id, $title1, $caption1, $caption2, $caption3, $descr1, $descr2, $descr3)
 	{
 		$this->db->set('home_title_1', $title1);
 		$this->db->set('home_caption_1', $caption1);
 		$this->db->set('home_caption_2', $caption2);
 		$this->db->set('home_caption_3', $caption3);
+		$this->db->set('home_descr_1', $descr1);
+		$this->db->set('home_descr_2', $descr2);
+		$this->db->set('home_descr_3', $descr3);
 		$this->db->where('home_id', $home_id);
 		$this->db->update('tbl_home');
 	}
@@ -154,97 +169,144 @@ class Setting_model extends CI_Model
 		return $query;
 	}
 
-	function update_portfolio($portfolio_id, $title, $subtitle, $project1, $image1, $desc1, $link1, $project2, $image2, $desc2, $link2, $project3, $image3, $desc3, $link3)
+	function update_portfolio($portfolio_id, $title, $subtitle, $project1, $image1, $desc1, $project2, $image2, $desc2, $project3, $image3, $desc3, $project4, $image4, $desc4, $project5, $image5, $desc5)
 	{
 		$this->db->set('portfolio_title', $title);
 		$this->db->set('portfolio_subtitle', $subtitle);
 		$this->db->set('portfolio_project1', $project1);
 		$this->db->set('portfolio_image1', $image1);
 		$this->db->set('portfolio_desc1', $desc1);
-		$this->db->set('portfolio_link1', $link1);
 		$this->db->set('portfolio_project2', $project2);
 		$this->db->set('portfolio_image2', $image2);
 		$this->db->set('portfolio_desc2', $desc2);
-		$this->db->set('portfolio_link2', $link2);
 		$this->db->set('portfolio_project3', $project3);
 		$this->db->set('portfolio_image3', $image3);
 		$this->db->set('portfolio_desc3', $desc3);
-		$this->db->set('portfolio_link3', $link3);
+		$this->db->set('portfolio_project4', $project4);
+		$this->db->set('portfolio_image4', $image4);
+		$this->db->set('portfolio_desc4', $desc4);
+		$this->db->set('portfolio_project5', $project5);
+		$this->db->set('portfolio_image5', $image5);
+		$this->db->set('portfolio_desc5', $desc5);
 
 		$this->db->where('portfolio_id', $portfolio_id);
 		$this->db->update('tbl_portfolio');
 	}
 
-	function update_portfolio_1($portfolio_id, $title, $subtitle, $project1, $image1, $desc1, $link1, $project2, $desc2, $link2, $project3, $desc3, $link3)
+	function update_portfolio_1($portfolio_id, $title, $subtitle, $project1, $image1, $desc1, $project2, $desc2, $project3, $desc3, $project4, $desc4, $project5, $desc5)
 	{
 		$this->db->set('portfolio_title', $title);
 		$this->db->set('portfolio_subtitle', $subtitle);
 		$this->db->set('portfolio_project1', $project1);
 		$this->db->set('portfolio_image1', $image1);
 		$this->db->set('portfolio_desc1', $desc1);
-		$this->db->set('portfolio_link1', $link1);
 		$this->db->set('portfolio_project2', $project2);
 		$this->db->set('portfolio_desc2', $desc2);
-		$this->db->set('portfolio_link2', $link2);
 		$this->db->set('portfolio_project3', $project3);
 		$this->db->set('portfolio_desc3', $desc3);
-		$this->db->set('portfolio_link3', $link3);
+		$this->db->set('portfolio_project4', $project4);
+		$this->db->set('portfolio_desc4', $desc4);
+		$this->db->set('portfolio_project5', $project5);
+		$this->db->set('portfolio_desc5', $desc5);
 
 		$this->db->where('portfolio_id', $portfolio_id);
 		$this->db->update('tbl_portfolio');
 	}
 
-	function update_portfolio_2($portfolio_id, $title, $subtitle, $project1, $desc1, $link1, $project2, $image2, $desc2, $link2, $project3, $desc3, $link3)
+	function update_portfolio_2($portfolio_id, $title, $subtitle, $project1, $desc1, $project2, $image2, $desc2, $project3, $desc3, $project4, $desc4, $project5, $desc5)
 	{
 		$this->db->set('portfolio_title', $title);
 		$this->db->set('portfolio_subtitle', $subtitle);
 		$this->db->set('portfolio_project1', $project1);
+		$this->db->set('portfolio_desc1', $desc1);
+		$this->db->set('portfolio_project2', $project2);
 		$this->db->set('portfolio_image2', $image2);
-		$this->db->set('portfolio_desc1', $desc1);
-		$this->db->set('portfolio_link1', $link1);
-		$this->db->set('portfolio_project2', $project2);
 		$this->db->set('portfolio_desc2', $desc2);
-		$this->db->set('portfolio_link2', $link2);
 		$this->db->set('portfolio_project3', $project3);
 		$this->db->set('portfolio_desc3', $desc3);
-		$this->db->set('portfolio_link3', $link3);
+		$this->db->set('portfolio_project4', $project4);
+		$this->db->set('portfolio_desc4', $desc4);
+		$this->db->set('portfolio_project5', $project5);
+		$this->db->set('portfolio_desc5', $desc5);
 
 		$this->db->where('portfolio_id', $portfolio_id);
 		$this->db->update('tbl_portfolio');
 	}
 
-	function update_portfolio_3($portfolio_id, $title, $subtitle, $project1, $desc1, $link1, $project2, $desc2, $link2, $project3, $image3, $desc3, $link3)
+	function update_portfolio_3($portfolio_id, $title, $subtitle, $project1, $desc1, $project2, $desc2, $project3, $image3, $desc3, $project4, $desc4, $project5, $desc5)
 	{
 		$this->db->set('portfolio_title', $title);
 		$this->db->set('portfolio_subtitle', $subtitle);
 		$this->db->set('portfolio_project1', $project1);
+		$this->db->set('portfolio_desc1', $desc1);
+		$this->db->set('portfolio_project2', $project2);
+		$this->db->set('portfolio_desc2', $desc2);
+		$this->db->set('portfolio_project3', $project3);
 		$this->db->set('portfolio_image3', $image3);
-		$this->db->set('portfolio_desc1', $desc1);
-		$this->db->set('portfolio_link1', $link1);
-		$this->db->set('portfolio_project2', $project2);
-		$this->db->set('portfolio_desc2', $desc2);
-		$this->db->set('portfolio_link2', $link2);
-		$this->db->set('portfolio_project3', $project3);
 		$this->db->set('portfolio_desc3', $desc3);
-		$this->db->set('portfolio_link3', $link3);
+		$this->db->set('portfolio_project4', $project4);
+		$this->db->set('portfolio_desc4', $desc4);
+		$this->db->set('portfolio_project5', $project5);
+		$this->db->set('portfolio_desc5', $desc5);
 
 		$this->db->where('portfolio_id', $portfolio_id);
 		$this->db->update('tbl_portfolio');
 	}
 
-	function update_portfolio_noimg($portfolio_id, $title, $subtitle, $project1, $desc1, $link1, $project2, $desc2, $link2, $project3, $desc3, $link3)
+	function update_portfolio_4($portfolio_id, $title, $subtitle, $project1, $desc1, $project2, $desc2, $project3, $desc3, $project4, $image4, $desc4, $project5, $desc5)
 	{
 		$this->db->set('portfolio_title', $title);
 		$this->db->set('portfolio_subtitle', $subtitle);
 		$this->db->set('portfolio_project1', $project1);
 		$this->db->set('portfolio_desc1', $desc1);
-		$this->db->set('portfolio_link1', $link1);
 		$this->db->set('portfolio_project2', $project2);
 		$this->db->set('portfolio_desc2', $desc2);
-		$this->db->set('portfolio_link2', $link2);
 		$this->db->set('portfolio_project3', $project3);
 		$this->db->set('portfolio_desc3', $desc3);
-		$this->db->set('portfolio_link3', $link3);
+		$this->db->set('portfolio_project4', $project4);
+		$this->db->set('portfolio_image4', $image4);
+		$this->db->set('portfolio_desc4', $desc4);
+		$this->db->set('portfolio_project5', $project5);
+		$this->db->set('portfolio_desc5', $desc5);
+
+		$this->db->where('portfolio_id', $portfolio_id);
+		$this->db->update('tbl_portfolio');
+	}
+
+	function update_portfolio_5($portfolio_id, $title, $subtitle, $project1, $desc1, $project2, $desc2, $project3, $desc3, $project4, $desc4, $project5, $image5, $desc5)
+	{
+		$this->db->set('portfolio_title', $title);
+		$this->db->set('portfolio_subtitle', $subtitle);
+		$this->db->set('portfolio_project1', $project1);
+		$this->db->set('portfolio_desc1', $desc1);
+		$this->db->set('portfolio_project2', $project2);
+		$this->db->set('portfolio_desc2', $desc2);
+		$this->db->set('portfolio_project3', $project3);
+		$this->db->set('portfolio_desc3', $desc3);
+		$this->db->set('portfolio_project4', $project4);
+		$this->db->set('portfolio_desc4', $desc4);
+		$this->db->set('portfolio_project5', $project5);
+		$this->db->set('portfolio_image5', $image5);
+		$this->db->set('portfolio_desc5', $desc5);
+
+		$this->db->where('portfolio_id', $portfolio_id);
+		$this->db->update('tbl_portfolio');
+	}
+
+	function update_portfolio_noimg($portfolio_id, $title, $subtitle, $project1, $desc1, $project2, $desc2, $project3, $desc3, $project4, $desc4, $project5, $desc5)
+	{
+		$this->db->set('portfolio_title', $title);
+		$this->db->set('portfolio_subtitle', $subtitle);
+		$this->db->set('portfolio_project1', $project1);
+		$this->db->set('portfolio_desc1', $desc1);
+		$this->db->set('portfolio_project2', $project2);
+		$this->db->set('portfolio_desc2', $desc2);
+		$this->db->set('portfolio_project3', $project3);
+		$this->db->set('portfolio_desc3', $desc3);
+		$this->db->set('portfolio_project4', $project4);
+		$this->db->set('portfolio_desc4', $desc4);
+		$this->db->set('portfolio_project5', $project5);
+		$this->db->set('portfolio_desc5', $desc5);
 
 		$this->db->where('portfolio_id', $portfolio_id);
 		$this->db->update('tbl_portfolio');

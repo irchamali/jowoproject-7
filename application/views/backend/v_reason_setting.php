@@ -3,7 +3,7 @@
 
 <head>
     <!-- Title -->
-    <title>Reason Settings</title>
+    <title>Articles Settings</title>
 
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta charset="UTF-8">
@@ -260,7 +260,7 @@
         </div><!-- Page Sidebar -->
         <div class="page-inner">
             <div class="page-title">
-                <h3>Reason Information</h3>
+                <h3>Articles Information</h3>
                 <div class="page-breadcrumb">
                     <ol class="breadcrumb">
                         <li><a href="<?php echo site_url('backend/dashboard'); ?>">Dashboard</a></li>

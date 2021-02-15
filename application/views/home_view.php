@@ -62,22 +62,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       
       <div class="container-fluid">
         <div class="d-flex align-items-center">
-          <div class="site-logo"><a href="index.html" class="text-uppercase">LKTS</a></div>
+          <div class="site-logo"><a href="<?= base_url(''); ?>" class="text-uppercase">LKTS</a></div>
           <div>
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-xl-block">
                 <li><a href="#home-section" class="nav-link">Home</a></li>
-                <li><a href="#process-section" class="nav-link">About</a></li>
+                <li><a href="#about-section" class="nav-link">About</a></li>
                 <li><a href="#services-section" class="nav-link">Services</a></li>
-                <li><a href="#testimonials-section" class="nav-link">Teams</a></li>
-                <li><a href="#work-section" class="nav-link">Projects</a></li>
+                <li><a href="#teams-section" class="nav-link">Teams</a></li>
+                <li><a href="#gallery-section" class="nav-link">Projects</a></li>
               </ul>
             </nav>
           </div>
           <div class="ml-auto">
             <nav class="site-navigation position-relative text-right" role="navigation">
               <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-xl-block">
-                <li><a href="#pricing-section" class="nav-link">Articles</a></li>
+                <li><a href="#articles-section" class="nav-link">Articles</a></li>
                 <li class="cta"><a href="#contact-section" class="nav-link"><span class="border bg-danger rounded text-white border-danger">Contact</span></a></li>
               </ul>
             </nav>
@@ -99,18 +99,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               </div> -->
               <div class="slide-text">
                 <h1><?= $caption_1; ?></h1>
-                <p class="mb-5">Selamat datang di situs resmi LKTS (Lembaga Kajian untuk Transformasi Sosial), selamat menikmati informasi seputar keadilan sosial.</p>
-                <p><a href="#process-section" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
+                <p class="mb-5"><?= $descr_1; ?></p>
+                <p><a href="#about-section" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
               </div>
               <div class="slide-text">
                 <h1><?= $caption_2; ?></h1>
-                <p class="mb-5">Pendirian dilakukan sejumlah OMS dalam lokakarya inisiasi simpul belajar yang difasilitasi LKTS atas dukungan program MADANI.</p>
-                <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
+                <p class="mb-5"><?= $descr_2; ?></p>
+                <p><a href="#services-section" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
               </div>
               <div class="slide-text">
                 <h1><?= $caption_3; ?></h1>
-                <p class="mb-5">Kasus kematian ibu dan bayi ini menjadi salah satu indikator Sustainable Development Goals (SDGs) di dunia.</p>
-                <p><a href="#" target="_blank" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
+                <p class="mb-5"><?= $descr_3; ?></p>
+                <p><a href="#teams-section" class="btn btn-outline-light py-3 px-5">Get Started</a></p>
               </div>
             </div>
 
@@ -131,7 +131,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </div>
     </div>
 
-    <div class="site-section section-1" id="process-section">
+    <div class="site-section section-1" id="about-section">
       <div class="container">
         <div class="row">
           <div class="col-lg-5 mr-auto mb-5"  data-aos="fade-up">
@@ -222,7 +222,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </div>
     </div>
 
-    <div class="site-section testimonial-wrap custom-owl-carousel" id="testimonials-section">
+    <div class="site-section testimonial-wrap custom-owl-carousel" id="teams-section">
       <div class="container">
         <div class="row text-center justify-content-center mb-5"  data-aos="fade-up">
           <div class="col-lg-6 mb-5 text-center">
@@ -232,44 +232,44 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         <div class="row align-items-center"  data-aos="fade-up" data-aos-delay="100">
           <div class="col-md-5 mr-auto">
-
             <div class="owl-carousel slide-one-item-alt-text">
+            <?php foreach ($testimonial->result() as $test) : ?>
               <div class="slide-text">
                 <blockquote>
-                  <p><span></span>Jabatan ini orang adalah?<span></span></p>
-                  <p class="author">&mdash;  Yaya</p>
+                  <p><span></span><?php echo $test->testimonial_content; ?><span></span></p>
+                  <p class="author">&mdash;  <?php echo $test->testimonial_name; ?></p>
                 </blockquote>
               </div>
-              <div class="slide-text">
+              <?php endforeach; ?>
+              <!-- <div class="slide-text">
                 <blockquote>
-                  <p><span></span>Jabatan ini orang adalah?<span></span></p>
+                  <p><span></span>Staff<span></span></p>
                   <p class="author">&mdash;  Fafa</p>
                 </blockquote>
               </div>
               <div class="slide-text">
                 <blockquote>
-                  <p><span></span>Jabatan ini orang adalah?<span></span></p>
+                  <p><span></span>Staff<span></span></p>
                   <p class="author">&mdash;  Jaja</p>
                 </blockquote>
               </div>
               <div class="slide-text">
                 <blockquote>
-                  <p><span></span>Jabatan ini orang adalah?<span></span></p>
+                  <p><span></span>Staff<span></span></p>
                   <p class="author">&mdash;  Wawa</p>
                 </blockquote>
-              </div>
-            </div>
+              </div> -->
 
+            </div>
           </div>
-          <div class="col-lg-4 ml-auto"  data-aos="fade-up" data-aos-delay="200">
-                        
-            <div class="owl-carousel slide-one-item-alt">
-              <img src="<?= base_url('theme/images/person-a.jpg'); ?>" alt="Image" class="img-fluid">
-              <img src="<?= base_url('theme/images/person-b.jpg'); ?>" alt="Image" class="img-fluid">
-              <img src="<?= base_url('theme/images/person-c.jpg'); ?>" alt="Image" class="img-fluid">
-              <img src="<?= base_url('theme/images/person-d.jpg'); ?>" alt="Image" class="img-fluid">
-            </div>
 
+          <div class="col-lg-4 ml-auto"  data-aos="fade-up" data-aos-delay="200">
+            <div class="owl-carousel slide-one-item-alt">
+              <?php foreach ($testimonial->result() as $test) : ?>
+                <img src="<?= base_url() . 'assets/images/' . $test->testimonial_image; ?>" class="img" alt="" />
+              <?php endforeach; ?>
+            </div>
+            
             <div class="owl-custom-direction">
               <a href="#" class="custom-prev"><span class="icon-keyboard_arrow_left"></span></a>
               <a href="#" class="custom-next"><span class="icon-keyboard_arrow_right"></span></a>
@@ -281,7 +281,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
 
 <!-- sini buat gallery -->
-  <div class="site-section section-2 bg-light" id="work-section" data-aos="fade">
+    <div class="site-section section-2 bg-light" id="gallery-section" data-aos="fade">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mb-2">
@@ -289,7 +289,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <p>Berikut beberapa dokumentasi project yang pernah kami lakukan</p>
           </div>
         </div>
-  </div>
+    </div>
         
       <div class="owl-carousel nonloop-block-13">
 
@@ -337,7 +337,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>    
 
 
-    <div class="pricing-wrap bg-primary pricing-counter" id="pricing-section" data-aos="fade">
+    <div class="pricing-wrap bg-primary pricing-counter" id="articles-section" data-aos="fade">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-7 text-center">
@@ -449,21 +449,38 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="row">
           <div class="col-md-4">
             <h3>About Us</h3>
-            <p>Kami merupakan sebuah organisasi nirlaba yang bergerak untuk mewujudkan transformasi sosial.</p>
+            <ul class="list-unstyled footer-links">
+              <li><a href="tel:+62276325658" class="pl-3 pr-3"><span class="icon-phone"></span>&nbsp &nbsp +62 276325658</a></li>
+              <li><a href="https://api.whatsapp.com/send?phone=+6285641447144" class="pl-3 pr-3"><span class="icon-whatsapp"></span>&nbsp &nbsp +62 85641447144</a></li>
+              <li><a href="mailto:information@lkts.org " class="pl-3 pr-3"><span class="icon-envelope"></span>&nbsp &nbsp information@lkts.org </a></li>
+              <li><a href="http://instagram.com/lktsofficial" class="pl-3 pr-3"><span class="icon-instagram"></span>&nbsp &nbsp @lktsofficial</a></li>
+              <li><a href="http://twitter.com/lktsofficial" class="pl-3 pr-3"><span class="icon-twitter"></span>&nbsp &nbsp lktsofficial</a></li>
+              <!-- <li><a href="http://facebook.com/lkts.indonesia" class="pl-3 pr-3"><span class="icon-facebook"></span>&nbsp &nbsp lktsindonesia</a></li> -->
+            </ul>
+            <!-- <p>Telpon</p> -->
           </div>
 
           <div class="col-md-3 ml-auto">
             <h3>Links</h3>
             <ul class="list-unstyled footer-links">
               <li><a href="#home-section" class="smoothscroll">Home</a></li>
-              <li><a href="#process-section" class="smoothscroll">About</a></li>
-              <li><a href="#testimonials-section" class="smoothscroll">Teams</a></li>
+              <li><a href="#about-section" class="smoothscroll">About</a></li>
+              <li><a href="#teams-section" class="smoothscroll">Teams</a></li>
               <li><a href="#services-section" class="smoothscroll">Services</a></li>
-              <li><a href="#work-section" class="smoothscroll">Projects</a></li>
+              <li><a href="#gallery-section" class="smoothscroll">Projects</a></li>
             </ul>
           </div>
 
           <div class="col-md-4">
+            <h3>MAPS</h3>
+            <p>Visit our office via maps</p>
+            <form action="#">
+              <div class="d-flex mb-5">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.3709870759462!2d110.59452451477655!3d-7.534454894565935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a6eb437e20ee5%3A0x699428c6ae8ceda3!2sInstitute%20for%20Social%20Transformation%20Studies!5e0!3m2!1sid!2sid!4v1613359588762!5m2!1sid!2sid" width="400" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+            </form>
+          </div>
+          <!-- <div class="col-md-4">
             <h3>Subscribe</h3>
             <p>Apakah kamu tertarik untuk mengikuti informasi seputar LKTS?</p>
             <form action="#">
@@ -472,7 +489,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
               </div>
             </form>
-          </div>
+          </div> -->
+
         </div>
 
         <div class="row pt-5 mt-5 text-center">

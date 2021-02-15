@@ -27,11 +27,15 @@ class Home extends CI_Controller
         $data['post_header_3'] = $this->home_model->get_post_header_3();
         $data['latest_post'] = $this->home_model->get_latest_post();
         $data['popular_post'] = $this->home_model->get_popular_post();
+
         $home = $this->db->get('tbl_home', 1)->row();
         $data['title_1'] = $home->home_title_1;
         $data['caption_1'] = $home->home_caption_1;
         $data['caption_2'] = $home->home_caption_2;
         $data['caption_3'] = $home->home_caption_3;
+        $data['descr_1'] = $home->home_descr_1;
+        $data['descr_2'] = $home->home_descr_2;
+        $data['descr_3'] = $home->home_descr_3;
         $data['slide_1'] = $home->home_slide_1;
         $data['slide_2'] = $home->home_slide_2;
         $data['slide_3'] = $home->home_slide_3;
@@ -65,15 +69,18 @@ class Home extends CI_Controller
         $data['portfolio_project1'] = $portfolio->portfolio_project1;
         $data['portfolio_image1'] = $portfolio->portfolio_image1;
         $data['portfolio_desc1'] = $portfolio->portfolio_desc1;
-        $data['portfolio_link1'] = $portfolio->portfolio_link1;
         $data['portfolio_project2'] = $portfolio->portfolio_project2;
         $data['portfolio_image2'] = $portfolio->portfolio_image2;
         $data['portfolio_desc2'] = $portfolio->portfolio_desc2;
-        $data['portfolio_link2'] = $portfolio->portfolio_link2;
         $data['portfolio_project3'] = $portfolio->portfolio_project3;
         $data['portfolio_image3'] = $portfolio->portfolio_image3;
         $data['portfolio_desc3'] = $portfolio->portfolio_desc3;
-        $data['portfolio_link3'] = $portfolio->portfolio_link3;
+        $data['portfolio_project4'] = $portfolio->portfolio_project4;
+        $data['portfolio_image4'] = $portfolio->portfolio_image4;
+        $data['portfolio_desc4'] = $portfolio->portfolio_desc4;
+        $data['portfolio_project5'] = $portfolio->portfolio_project5;
+        $data['portfolio_image5'] = $portfolio->portfolio_image5;
+        $data['portfolio_desc5'] = $portfolio->portfolio_desc5;
 
         $reason = $this->db->get('tbl_reason', 1)->row();
         $data['reason_title'] = $reason->reason_title;
