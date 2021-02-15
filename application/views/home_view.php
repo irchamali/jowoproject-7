@@ -285,52 +285,52 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mb-2">
-            <h2 class="section-title">Gallery</h2>
-            <p>Berikut beberapa dokumentasi project yang pernah kami lakukan</p>
+            <h2 class="section-title"><?= $portfolio_title; ?></h2>
+            <p><?= $portfolio_subtitle; ?></p>
           </div>
         </div>
     </div>
         
       <div class="owl-carousel nonloop-block-13">
 
-          <a class="work-thumb" href="<?= base_url('theme/images/foto1.jpg'); ?>" data-fancybox="gallery">
+          <a class="work-thumb" href="<?= base_url('theme/images/') . $portfolio_image1; ?>" data-fancybox="gallery">
             <div class="work-text">
-              <h3>Project Name Here</h3>
-              <span class="category">Website</span>
+              <h3><?= $portfolio_project1; ?></h3>
+              <span class="category"><?= $portfolio_desc1; ?></span>
             </div>
-            <img src="<?= base_url('theme/images/foto1.jpg'); ?>" alt="Image" class="img-fluid">
+            <img src="<?= base_url('theme/images/') . $portfolio_image1; ?>" alt="Image" class="img-fluid">
           </a> 
           
-          <a class="work-thumb" href="<?= base_url('theme/images/foto2.jpg'); ?>" data-fancybox="gallery">
+          <a class="work-thumb" href="<?= base_url('theme/images/') . $portfolio_image2; ?>" data-fancybox="gallery">
             <div class="work-text">
-              <h3>Project Name Here</h3>
-              <span class="category">Illustration</span>
+              <h3><?= $portfolio_project2; ?></h3>
+              <span class="category"><?= $portfolio_desc2; ?></span>
             </div>
-            <img src="<?= base_url('theme/images/foto2.jpg'); ?>" alt="Image" class="img-fluid">
+            <img src="<?= base_url('theme/images/') . $portfolio_image2; ?>" alt="Image" class="img-fluid">
           </a>
 
-          <a class="work-thumb" href="<?= base_url('theme/images/foto3.jpg'); ?>" data-fancybox="gallery">
+          <a class="work-thumb" href="<?= base_url('theme/images/') . $portfolio_image3; ?>" data-fancybox="gallery">
             <div class="work-text">
-              <h3>Project Name Here</h3>
-              <span class="category">Branding</span>
+              <h3><?= $portfolio_project3; ?></h3>
+              <span class="category"><?= $portfolio_desc3; ?></span>
             </div>
-            <img src="<?= base_url('theme/images/foto3.jpg'); ?>" alt="Image" class="img-fluid">
+            <img src="<?= base_url('theme/images/') . $portfolio_image3; ?>" alt="Image" class="img-fluid">
           </a>
 
-          <a class="work-thumb" href="<?= base_url('theme/images/foto4.jpg'); ?>" data-fancybox="gallery">
+          <a class="work-thumb" href="<?= base_url('theme/images/') . $portfolio_image4; ?>" data-fancybox="gallery">
             <div class="work-text">
-              <h3>Project Name Here</h3>
-              <span class="category">Web Development</span>
+              <h3><?= $portfolio_project4; ?></h3>
+              <span class="category"><?= $portfolio_desc4; ?></span>
             </div>
-            <img src="<?= base_url('theme/images/foto4.jpg'); ?>" alt="Image" class="img-fluid">
+            <img src="<?= base_url('theme/images/') . $portfolio_image4; ?>" alt="Image" class="img-fluid">
           </a>
 
-          <a class="work-thumb" href="<?= base_url('theme/images/foto5.jpg'); ?>" data-fancybox="gallery">
+          <a class="work-thumb" href="<?= base_url('theme/images/') . $portfolio_image5; ?>" data-fancybox="gallery">
             <div class="work-text">
-              <h3>Project Name Here</h3>
-              <span class="category">Design</span>
+              <h3><?= $portfolio_project5; ?></h3>
+              <span class="category"><?= $portfolio_desc5; ?></span>
             </div>
-            <img src="<?= base_url('theme/images/foto5.jpg'); ?>" alt="Image" class="img-fluid">
+            <img src="<?= base_url('theme/images/') . $portfolio_image5; ?>" alt="Image" class="img-fluid">
           </a>
       </div>
     
